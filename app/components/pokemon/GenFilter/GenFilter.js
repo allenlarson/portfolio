@@ -84,7 +84,7 @@ function GenFilter({ pokemons, filteredGen, resetSearchBar }) {
     <div className={`relative flex flex-column`}>
       <div className="relative flex items-center">
         <button
-          className={`bg-transparent border-none text-lg text-white tracking-wider cursor-pointer font-normal`}
+          className={`bg-transparent border-none text-md text-white tracking-wider cursor-pointer font-normal mr-2`}
           onClick={() => setIsOpen(prev => !prev)}
         >
           Generations
@@ -107,11 +107,11 @@ function GenFilter({ pokemons, filteredGen, resetSearchBar }) {
       </div>
       {isOpen && (
         <div
-          className={`${styles.genNav} absolute top-14 flex flex-col items-start p-5 z-10 w-[300px] rounded-3xl`}
+          className={`${styles.genNav} absolute top-14 flex flex-col items-start p-5 z-10 w-[300px] rounded-3xl text-sm`}
         >
           <div className="flex flex-row items-center justify-between w-full pb-4">
             <div>
-              <span className="text-lg">Generations</span>
+              <span className="text-lg text-white">Generations</span>
             </div>
             <div>
               <button
@@ -215,7 +215,7 @@ function GenFilter({ pokemons, filteredGen, resetSearchBar }) {
       )}
       <div className="relative flex items-center">
         <button
-          className={`bg-transparent border-none text-lg text-white tracking-wider cursor-pointer font-normal`}
+          className={`bg-transparent border-none text-md text-white tracking-wider cursor-pointer font-normal`}
           onClick={() => setTypeOpen(prev => !prev)}
         >
           Types
