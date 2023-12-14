@@ -1,0 +1,13 @@
+.pokeSearch {
+  background-color: #252525;
+  justify-content: space-between;
+}
+
+input.search {
+  width: 450px;
+  background-color: #ffffff1a;
+  color: #7c7c7c;
+  border: none 0px #9797971a;
+  padding: 6px;
+  border-radius: 8px;
+}
