@@ -70,9 +70,9 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen ? (
-        <ul className="flex flex-col py-4 items-center">
+        <ul className="flex flex-col py-6 items-center font-bold">
           {menu.map((item, title) => (
-            <li key={title}>
+            <li key={title} className="p-2 m-1">
               <MobileMenu url={item.url} title={item.title} />
             </li>
           ))}
