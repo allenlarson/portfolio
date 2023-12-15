@@ -1,0 +1,8 @@
+.opaqueCard {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proj-card:hover {
+  opacity: 1;
+}
