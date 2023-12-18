@@ -3,7 +3,7 @@ import {
   fetchDamageTypes,
   fetchPokeInfo,
   fetchSpecies,
-} from '../../api/pokemon/route';
+} from '../api/pokemon/route';
 import PokemonView from './View';
 
 let pokemons = [];

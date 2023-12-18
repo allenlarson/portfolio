@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -15,16 +15,28 @@ export const ContactForm = () => {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    try {
-      const res = await fetch('./api/contact', {
-        method: 'POST',
-        body: JSON.stringify({ name, email, message }),
-        headers: {
-          'content-type': 'application/json',
-        },
-      });
-    } catch (error: any) {
-      console.log('Err', error);
+    const data = {
+      email,
+      name,
+      message,
+    };
+
+    const JSONdata = JSON.stringify(data);
+    const endpoint = '/api/send';
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+
+    if (response.status === 200) {
+      console.log('Message Sent.');
     }
   };
 
@@ -36,7 +48,7 @@ export const ContactForm = () => {
         id="name"
         placeholder="Your Name"
         value={name}
-        className="text-slate-500"
+        className="text-slate-500 my-2"
       />
       <Label htmlFor="email">Email</Label>
       <Input
@@ -45,7 +57,7 @@ export const ContactForm = () => {
         id="email"
         placeholder="Email"
         value={email}
-        className="text-slate-500"
+        className="text-slate-500 my-2"
       />
       <Label htmlFor="message">Message</Label>
       <Textarea
@@ -53,9 +65,11 @@ export const ContactForm = () => {
         value={message}
         id="message"
         placeholder="Enter your message..."
-        className="text-slate-500"
+        className="text-slate-500 my-2"
       />
-      <Button type="submit">Submit</Button>
+      <Button type="submit" className="w-full my-2">
+        Submit
+      </Button>
     </form>
   );
 };
