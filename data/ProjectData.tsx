@@ -12,13 +12,13 @@ export const ProjectData = [
       'TypeScript',
       'MySQL',
     ],
-    image: '',
+    image: '/taskify.jpg',
   },
   {
     title: 'Pokédex',
     description: `Search for your favorite pokemon using the PokeAPI. Tons of filters to help you find the right pokemon!`,
     link: '/pokemon',
     skills: ['Nextjs', 'React', 'Javascript', 'Tailwind CSS', 'TypeScript'],
-    image: '',
+    image: '/pokedex.jpg',
   },
 ];

@@ -16,7 +16,7 @@ function PokemonView({ pokemons }) {
   };
 
   return (
-    <div className="pokedex container">
+    <div className="pokedex mt-52 container">
       <div
         className={`${styles.pokeSearch} flex p-2 m-4 bg-black rounded-xl items-center`}
       >

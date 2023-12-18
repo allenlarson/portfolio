@@ -10,9 +10,9 @@ import { TypeAnimation } from 'react-type-animation';
 export const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left pt-4">
-          <h1 className="text-white mb-3 text-4xl md:text-6xl font-bold bg-gradient-to-br from-amber-400 via-pink-600 to-violet-900 bg-clip-text text-transparent">
+      <div className="mt-6 md:my-20 grid grid-cols-1 sm:grid-cols-12">
+        <div className="col-span-7 text-center sm:text-left pt-4">
+          <h1 className="mb-4 text-4xl md:text-6xl font-bold bg-gradient-to-br from-amber-400 via-pink-600 to-violet-900 bg-clip-text text-transparent">
             Hello, I'm Allen
           </h1>
 
@@ -35,7 +35,7 @@ export const HeroSection = () => {
             className="text-3xl md:text-4xl font-bold"
           />
 
-          <p className="mt-3 mb-6">
+          <p className="mt-3 mb-8">
             Welcome to my digital playground, where lines of code transform into
             immersive online experiences. I'm Allen, a passionate and innovative
             web developer dedicated to crafting elegant and efficient solutions.
@@ -50,9 +50,9 @@ export const HeroSection = () => {
                 Contact Me
               </Button>
             </Link>
-            <Link href="#">
+            <Link href="/Allen_Larson_Resume.pdf">
               <Button variant="secondary" className="w-full sm:w-fit" size="lg">
-                Download CSV
+                Download PDF
               </Button>
             </Link>
           </div>

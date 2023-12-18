@@ -1,14 +1,18 @@
 import PokemonContainer from './Container';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'PokeDex',
-  description: 'Gotta Catch em all! This is your real life Pokedex',
+  title: 'Pokédex',
+  description: 'Gotta Catch em all!',
 };
 
 const Page = () => {
   return (
     <div className="flex min-h-screen flex-col bg-[#0c0c0c]">
+      <Navbar />
       <PokemonContainer />
+      <Footer />
     </div>
   );
 };

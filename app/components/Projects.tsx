@@ -1,6 +1,7 @@
 'use client';
 
 import { ProjectData } from '@/data/ProjectData';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Projects = () => {
@@ -20,8 +21,17 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="proj-card flex flex-col md:flex-row p-6 mb-10 rounded-md hover:bg-slate-500/10">
-              <div className="md:flex pr-8 mb-2 text-sm font-semibold uppercase tracking-wide text-slate-400">
-                <span>Image</span>
+              <div className="mr-6">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={200}
+                  height={113}
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                  }}
+                />
               </div>
               <div className="flex-1">
                 <h3 className="font-bold pb-2">{project.title}</h3>

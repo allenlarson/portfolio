@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  metadataBase: new URL('https://www.amlarson.net'),
+  metadataBase: new URL('https://www.allenlarson.net'),
   icons: [
     {
       url: '/al-logo.png',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    url: 'https://www.amlarson.net',
+    url: 'https://www.allenlarson.net',
     siteName: siteConfig.name,
   },
 };
