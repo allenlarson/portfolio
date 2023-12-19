@@ -15,7 +15,7 @@ const ContactPage = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-center">Hire Me!</h1>
       </div>
       <div className="flex flex-col md:flex-row container gap-8 pb-24">
-        <div className="flex-1 p-8">
+        <div className="flex-1 p-0 md:p-8 ">
           <h2 className="font-bold uppercase tracking-widest text-2xl md:text-xl mb-6">
             Let&apos;s Connect
           </h2>

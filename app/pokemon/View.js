@@ -18,7 +18,7 @@ function PokemonView({ pokemons }) {
   return (
     <div className="pokedex mt-52 container">
       <div
-        className={`${styles.pokeSearch} flex p-2 m-4 bg-black rounded-xl items-center`}
+        className={`${styles.pokeSearch} flex flex-col md:flex-row gap-4 p-2 m-4 bg-black rounded-xl items-center`}
       >
         <GenFilter
           pokemons={pokemons}

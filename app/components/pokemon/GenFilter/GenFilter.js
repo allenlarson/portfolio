@@ -107,7 +107,7 @@ function GenFilter({ pokemons, filteredGen, resetSearchBar }) {
       </div>
       {isOpen && (
         <div
-          className={`${styles.genNav} absolute top-14 flex flex-col items-start p-5 z-10 w-[300px] rounded-3xl text-sm`}
+          className={`${styles.genNav} absolute top-14 right-[-50px] md:right-[-150px] flex flex-col items-start p-5 z-10 w-[300px] rounded-3xl text-sm`}
         >
           <div className="flex flex-row items-center justify-between w-full pb-4">
             <div>

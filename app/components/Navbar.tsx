@@ -59,7 +59,10 @@ const Navbar = () => {
             </Button>
           )}
         </div>
-        <div className="menu hidden md:flex md:flex-row md:w-auto" id="navbar">
+        <div
+          className="menu items-center hidden md:flex md:flex-row md:w-auto"
+          id="navbar"
+        >
           <ul className="flex flex-row p-3 md:space-x-8 mt-0">
             {menu.map((item, title) => (
               <li key={title}>
@@ -67,6 +70,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <Button variant="default" size="lg" className="ml-2">
+            Contact Me
+          </Button>
         </div>
       </div>
       {isOpen ? (
@@ -76,6 +82,11 @@ const Navbar = () => {
               <MobileMenu url={item.url} title={item.title} />
             </li>
           ))}
+          <Link className="w-full" href="/contact">
+            <Button className="mt-4 w-full text-xl font-bold" size="lg">
+              Hire Me
+            </Button>
+          </Link>
         </ul>
       ) : null}
     </nav>
