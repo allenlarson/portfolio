@@ -70,16 +70,22 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button variant="default" size="lg" className="ml-2">
-            Contact Me
-          </Button>
+          <Link href="/contact">
+            <Button variant="default" size="lg" className="ml-2">
+              Contact Me
+            </Button>
+          </Link>
         </div>
       </div>
       {isOpen ? (
         <ul className="flex flex-col py-6 items-center font-bold">
           {menu.map((item, title) => (
             <li key={title} className="p-2 m-1">
-              <MobileMenu url={item.url} title={item.title} />
+              <MobileMenu
+                isOpen={() => setIsOpen(false)}
+                url={item.url}
+                title={item.title}
+              />
             </li>
           ))}
           <Link className="w-full" href="/contact">

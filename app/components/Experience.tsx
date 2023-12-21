@@ -26,13 +26,11 @@ const Experience = () => {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold pb-2">{exp.company}</h3>
-                <span className="text-slate-400">
+                <span className="text-slate-300">
                   {exp.title}
                   {' • '}
                 </span>
-                <span className="text-slate-400 tracking-widest">
-                  {exp.loc}
-                </span>
+                <span className="text-slate-400 ">{exp.loc}</span>
                 <p className="pt-2">{exp.description}</p>
               </div>
             </div>
