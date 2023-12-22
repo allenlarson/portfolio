@@ -37,10 +37,10 @@ const Logos = () => {
   ];
 
   return (
-    <div className="flex flex-row flex-wrap contain gap-4 justify-center">
+    <div className="flex flex-row flex-wrap contain md:gap-4 justify-center mt-20 md:mt-40">
       {logos.map(logo => (
         <span
-          className="flex w-1/5 p-2 rounded-md hover:bg-slate-500/10 justify-center"
+          className="flex w-1/2 md:w-1/5 p-1 md:p-2 rounded-md hover:bg-slate-500/10 justify-center"
           key={logo.name}
         >
           <Image width={183} height={103} src={logo.url} alt={logo.name} />

@@ -6,7 +6,10 @@ import Link from 'next/link';
 
 const Projects = () => {
   return (
-    <div id="projects" className="pb-52 flex flex-row w-full flex-wrap">
+    <div
+      id="projects"
+      className="pb-20 md:pb-52 flex flex-row w-full flex-wrap"
+    >
       <div className="w-full md:flex-none md:w-[25%] lg:flex-1">
         <h2 className="font-bold uppercase tracking-widest text-2xl md:text-xl mb-6">
           Projects
