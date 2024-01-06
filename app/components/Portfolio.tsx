@@ -1,6 +1,9 @@
-import React from 'react';
-
 function Portfolio() {
+  const portfolio = {
+    name: 'Revance Aesthetics',
+    url: '',
+  };
+
   return <div>Portfolio</div>;
 }
 
