@@ -4,6 +4,7 @@ import { HeroSection } from './components/HeroSection';
 import Logos from './components/Logos';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <Logos />
+        <Skills />
         <Experience />
         <Projects />
         <Footer />

@@ -7,7 +7,7 @@ export const ProjectData = [
     skills: [
       'Nextjs',
       'React',
-      'Javascript',
+      'JavaScript',
       'Tailwind CSS',
       'TypeScript',
       'MySQL',
@@ -18,7 +18,7 @@ export const ProjectData = [
     title: 'Pokédex',
     description: `Search for your favorite pokemon using the PokeAPI. Tons of filters to help you find the right pokemon!`,
     link: '/pokemon',
-    skills: ['Nextjs', 'React', 'Javascript', 'Tailwind CSS', 'TypeScript'],
+    skills: ['Nextjs', 'React', 'JavaScript', 'Tailwind CSS', 'TypeScript'],
     image: '/pokedex.jpg',
   },
 ];
