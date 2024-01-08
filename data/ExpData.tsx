@@ -19,7 +19,7 @@ export const ExpData = [
     referrals.`,
     link: 'https://www.amlarson.com',
     start: 2018,
-    end: 2023,
+    end: 2024,
     loc: 'Hampton, VA',
   },
   {
