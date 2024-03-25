@@ -5,6 +5,7 @@ import Logos from './components/Logos';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Portfolio />
         <Footer />
       </div>
     </main>
