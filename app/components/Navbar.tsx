@@ -23,6 +23,10 @@ const menu = [
     title: 'Projects',
     url: '/#projects',
   },
+  {
+    title: 'Portfolio',
+    url: '/#portfolio',
+  },
 ];
 
 const Navbar = () => {
