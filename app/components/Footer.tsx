@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex justify-center">
       <div className="flex flex-col text-center text-sm text-slate-500  py-8">
-        <p className="">Copyright © 2023 AllenLarson.net</p>
+        <p className="">Copyright © 2024 AllenLarson.net</p>
         <p>
           Build with{' '}
           <Link href="https://nextjs.org" target="_blank">
