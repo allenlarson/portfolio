@@ -1,5 +1,14 @@
 export const ExpData = [
   {
+    company: 'Davis Ad Agency',
+    title: 'Web Developer',
+    description: `Developed responsive websites, landing pages, and applications for major brands using JavaScript frameworks (Svelte/React) and CSS/SASS. Collaborated with creative teams to deliver user-focused solutions, integrated REST APIs, and managed databases. Juggled multiple projects in a fast-paced environment, meeting deadlines while driving measurable client results.`,
+    link: 'https://www.davisadagency.com',
+    start: 2024,
+    end: 'Present',
+    loc: 'Virginia Beach, VA',
+  },
+  {
     company: 'Kingsmen Digital Ventures',
     title: 'Web Developer, Remote',
     description: `Led the development of all corporate client websites using HTML, CSS, and JavaScript, on wordpress CMS, resulting in

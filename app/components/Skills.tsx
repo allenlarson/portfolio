@@ -5,6 +5,7 @@ const Skills = () => {
     'JavaScript',
     'React',
     'Nextjs',
+    'Svelte',
     'Tailwind CSS',
     'MySQL',
     'WordPress',
