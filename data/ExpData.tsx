@@ -5,7 +5,7 @@ export const ExpData = [
     description: `Developed responsive websites, landing pages, and applications for major brands using JavaScript frameworks (Svelte/React) and CSS/SASS. Collaborated with creative teams to deliver user-focused solutions, integrated REST APIs, and managed databases. Juggled multiple projects in a fast-paced environment, meeting deadlines while driving measurable client results.`,
     link: 'https://www.davisadagency.com',
     start: 2024,
-    end: 'Pres',
+    end: '2025',
     loc: 'Virginia Beach, VA',
   },
   {
